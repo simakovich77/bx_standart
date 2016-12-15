@@ -2,10 +2,10 @@
 define("BX_USE_MYSQLI", true);
 define("DBPersistent", false);
 $DBType = "mysql";
-$DBHost = "localhost";
-$DBLogin = "root";
-$DBPassword = "toor";
-$DBName = "bit";
+$DBHost = "194.135.91.242";
+$DBLogin = "common_vanobit";
+$DBPassword = "0xHfxZPUFI";
+$DBName = "common_vanobit";
 $DBDebug = false;
 $DBDebugToFile = false;
 define("MYSQL_TABLE_TYPE", "INNODB");

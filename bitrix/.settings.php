@@ -44,10 +44,10 @@
       'default' => 
       array (
         'className' => '\\Bitrix\\Main\\DB\\MysqliConnection',
-        'host' => 'localhost',
-        'database' => 'bit',
-        'login' => 'root',
-        'password' => 'toor',
+        'host' => '194.135.91.242',
+        'database' => 'common_vanobit',
+        'login' => 'common_vanobit',
+        'password' => '0xHfxZPUFI',
         'options' => 2,
       ),
     ),
