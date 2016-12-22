@@ -28,13 +28,8 @@ $APPLICATION->SetTitle("Мебельная компания");
 	false
 );?>
 
-<<<<<<< HEAD
 <?
 $a = array('qwe',123);
-=======
-<? $a = array('qwe',123);
-
->>>>>>> 720146a21dbbb2e41469925343916565e40145ab
 dump($a);
 ?>
 
