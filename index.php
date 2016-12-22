@@ -31,7 +31,6 @@ $APPLICATION->SetTitle("Мебельная компания");
 <?
 $a = array('qwe',123);
 dump($a);
-echo '111';
 ?>
 
 </p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
