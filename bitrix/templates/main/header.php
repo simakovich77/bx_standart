@@ -12,8 +12,14 @@
 	<script type="text/javascript" src="/bitrix/templates/.default/js/functions.js"></script>
 	
 	<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+
+    <? \Bitrix\Main\Localization\Loc::loadMessages(__FILE__);?>
+    <?=GetMessage('MY_LANG_MESSAGE');?>
+
 </head>
 <body>
+
+
 	<div class="wrap">
 		<div class="hd_header_area">
 			<div class="hd_header">

@@ -1,4 +1,2 @@
-2017-Jan-19 08:12:55 Наличие необходимых модулей php (check_php_modules): Ok
-Все необходимые модули установлены
-2017-Jan-19 08:12:55 Обязательные параметры PHP (check_php_settings): Fail
-Ошибка! Значение max_input_vars должно быть не ниже 10000. Текущее значение: 1000
+2017-Jan-21 14:07:14 Required PHP Modules (check_php_modules): Fail
+Error! The required extensions are not installed:XML supportFree Type TextGD LibraryGD JPEG supportEncryption features MCryptmbstring support
