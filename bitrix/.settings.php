@@ -1,6 +1,5 @@
 <?php
-
-return array (
+return array (
   'utf_mode' => 
   array (
     'value' => true,
@@ -10,8 +9,8 @@ return array (
   array (
     'value' => 
     array (
-      'config_options' => 3600,
-      'site_domain' => 3600,
+      'config_options' => 3600.0,
+      'site_domain' => 3600.0,
     ),
     'readonly' => false,
   ),
@@ -28,7 +27,7 @@ return array (
   array (
     'value' => 
     array (
-      'debug' => true,
+      'debug' => false,
       'handled_errors_types' => 4437,
       'exception_errors_types' => 4437,
       'ignore_silence' => false,
@@ -49,7 +48,7 @@ return array (
         'database' => 'common_vanobit',
         'login' => 'common_vanobit',
         'password' => '0xHfxZPUFI',
-        'options' => 2,
+        'options' => 2.0,
       ),
     ),
     'readonly' => true,
