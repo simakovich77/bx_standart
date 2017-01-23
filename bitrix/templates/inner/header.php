@@ -5,6 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
+	
 <?$APPLICATION->ShowHead();?>
 	<meta charset="windows-1251">
 	<title><?$APPLICATION->ShowTitle()?></title>
@@ -21,6 +22,7 @@ IncludeTemplateLangFile(__FILE__);
 <body>
 <?$APPLICATION->ShowPanel();?>
 	<div class="wrap">
+		<div id="panel"><?$APPLICATION->ShowPanel();?></div>
 		<div class="hd_header_area">
 			<div class="hd_header">
 				<table>
