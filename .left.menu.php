@@ -6,6 +6,20 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Тест", 
+		"/test.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Пользователь", 
+		"/user/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>
