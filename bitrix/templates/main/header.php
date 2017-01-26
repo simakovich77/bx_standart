@@ -18,6 +18,10 @@
 	Asset::getInstance()->addJs("/bitrix/templates/.default/js/slides.min.jquery.js");
 	Asset::getInstance()->addJs("/bitrix/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js");
 	Asset::getInstance()->addJs("/bitrix/templates/.default/js/functions.js");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e630a87f754d8d794ef8ed3d234277bfc2a72d0
 
 ?>
 	
@@ -29,9 +33,9 @@
 
 </head>
 <body>
-
-
-
+<?
+echo SITE_TEMPLATE_PATH;
+?>
 
 
 

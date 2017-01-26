@@ -8,11 +8,16 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+<<<<<<< HEAD
 		"Тест", 
+=======
+		"test", 
+>>>>>>> 7e630a87f754d8d794ef8ed3d234277bfc2a72d0
 		"/test.php", 
 		Array(), 
 		Array(), 
 		"" 
+<<<<<<< HEAD
 	),
 	Array(
 		"Пользователь", 
@@ -20,6 +25,8 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+=======
+>>>>>>> 7e630a87f754d8d794ef8ed3d234277bfc2a72d0
 	)
 );
 ?>
