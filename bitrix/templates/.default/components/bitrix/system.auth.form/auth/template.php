@@ -1,6 +1,10 @@
+
+
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 
+
+<?if($arResult["FORM_TYPE"] == "login"):?>
 
 	<?
 	if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR'])
@@ -8,13 +12,13 @@
 	?>
 
 
-	<span class="hd_singin"><a id="hd_singin_but_open" href="">Войти на сайт</a>
+    <span class="hd_singin"><a id="hd_singin_but_open" href="">Войти на сайт</a>
 							<div class="hd_loginform">
 								<span class="hd_title_loginform">Войти на сайт</span>
 
 
 
-	<?if($arResult["FORM_TYPE"] == "login"):?>
+
 
 		<form name="system_auth_form<?=$arResult["RND"]?>" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
 			<?if($arResult["BACKURL"] <> ''):?>
@@ -71,7 +75,7 @@
 
 
 
-	
+
 
 		<?
 	else:
