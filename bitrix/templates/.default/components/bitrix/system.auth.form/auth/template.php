@@ -12,10 +12,9 @@
 	?>
 
 
-    <span class="hd_singin"><a id="hd_singin_but_open" href="">Войти на сайт</a>
+	<span class="hd_singin"><a id="hd_singin_but_open" href="">Войти на сайт</a>
 							<div class="hd_loginform">
 								<span class="hd_title_loginform">Войти на сайт</span>
-
 
 
 
@@ -61,7 +60,7 @@
 				<?endif?>
 
 
-            <input value="AUTH_LOGIN_BUTTON" name="Login" style="margin-top: 20px;" type="submit">
+            <input value=<?=GetMessage("AUTH_LOGIN_BUTTON")?> name="Login" style="margin-top: 20px;" type="submit">
 
 	</form>
 								<span class="hd_close_loginform">Закрыть</span>
@@ -81,24 +80,18 @@
 	else:
 		?>
 
-		<form action="<?=$arResult["AUTH_URL"]?>">
-			<table width="95%">
-				<tr>
-					<td align="center">
-						<?=$arResult["USER_NAME"]?><br />
-						[<?=$arResult["USER_LOGIN"]?>]<br />
-						<a href="<?=$arResult["PROFILE_URL"]?>" title="<?=GetMessage("AUTH_PROFILE")?>"><?=GetMessage("AUTH_PROFILE")?></a><br />
-					</td>
-				</tr>
-				<tr>
-					<td align="center">
-						<?foreach ($arResult["GET"] as $key => $value):?>
-							<input type="hidden" name="<?=$key?>" value="<?=$value?>" />
-						<?endforeach?>
-						<input type="hidden" name="logout" value="yes" />
-						<input type="submit" name="logout_butt" value="<?=GetMessage("AUTH_LOGOUT_BUTTON")?>" />
-					</td>
-				</tr>
-			</table>
-		</form>
+
+
+
+		<span class="hd_sing">
+								<?=$arResult["USER_NAME"]?> [<a href="<?=$arResult["PROFILE_URL"]?>"><?=$arResult["USER_LOGIN"]?></a>]
+							</span>
+		<a href="<?=$APPLICATION->GetCurPageParam("logout=yes", array(
+		"login",
+		"logout",
+		"register",
+		"forgot_password",
+		"change_password"))?>" class="hd_signup"><?=GetMessage("AUTH_LOGOUT_BUTTON")?></a>
+
+
 	<?endif?>

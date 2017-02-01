@@ -1,23 +1,29 @@
-﻿<? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-IncludeTemplateLangFile(__FILE__);
-?> 
+﻿
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	
-<?$APPLICATION->ShowHead();?>
+	<?$APPLICATION->ShowHead();?>
 	<meta charset="windows-1251">
-	<title><?$APPLICATION->ShowTitle()?></title>
+	<title></title>
 
-	<link rel="stylesheet" href="/bitrix/templates/.default/template_style.css"/>
-	
-	<script type="text/javascript" src="/bitrix/templates/.default/js/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/.default/js/slides.min.jquery.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/.default/sjs/functions.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="/bitrix/templates/.default/favicon.ico"/>
+	<!--<link rel="stylesheet" href="/bitrix/templates/.default/template_style.css"/>-->
+	<?
+	use Bitrix\Main\Page\Asset;
+	Asset::getInstance()->addCss("/bitrix/templates/.default/template_style.css");
+	//Asset::getInstance()->addString("<link href=". SITE_TEMPLATE_PATH . "'/bitrix/templates/.default/template_style.css\' rel='stylesheet' type='text/css'>");
+	?>
+	<?
+
+
+	Asset::getInstance()->addJs("/bitrix/templates/.default/js/jquery-1.8.2.min.js");
+	Asset::getInstance()->addJs("/bitrix/templates/.default/js/slides.min.jquery.js");
+	Asset::getInstance()->addJs("/bitrix/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js");
+	Asset::getInstance()->addJs("/bitrix/templates/.default/js/functions.js");
+	?>
 	<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+
+	<? \Bitrix\Main\Localization\Loc::loadMessages(__FILE__);?>
+	<?=GetMessage('MY_LANG_MESSAGE');?>
 </head>
 <body>
 
@@ -72,8 +78,16 @@ IncludeTemplateLangFile(__FILE__);
 					</tr>
 					<tr>
 						<td style="padding-top: 11px;">
-							<a href="" class="hd_singin">Войти на сайт</a><br>
-							<a href="" class="hd_signup">Зарегистрироватся</a>
+							<?$APPLICATION->IncludeComponent(
+								"bitrix:system.auth.form",
+								"auth",
+								Array(
+									"FORGOT_PASSWORD_URL" => "/user/",
+									"PROFILE_URL" => "/user/profile.php",
+									"REGISTER_URL" => "/user/registration.php",
+									"SHOW_ERRORS" => "N"
+								)
+							);?><br>
 						</td>
 					</tr>
 				</table>
