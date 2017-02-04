@@ -1,4 +1,6 @@
-﻿<!DOCTYPE HTML>
+﻿<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
+
+<!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<?$APPLICATION->ShowHead();?>
@@ -41,9 +43,11 @@ echo SITE_TEMPLATE_PATH;
 	<div class="wrap">
 		<div id="panel"><?$APPLICATION->ShowPanel();?></div>
 		<div class="hd_header_area">
-			<div class="hd_header">
 
-			</div>
+
+                <?include_once ($_SERVER['DOCUMENT_ROOT']."/bitrix/templates/.default/include/header.php");?>
+
+
 		</div>
 
 		<!--- // end header area --->
@@ -244,30 +248,3 @@ echo SITE_TEMPLATE_PATH;
 			</div>
 		</div>
 		
-		<div class="ft_footer">
-			<div class="ft_container">
-				<div class="ft_about">
-					<h4>О магазине</h4>
-					<ul>
-						<li><a href="">Отзывы</a></li>
-						<li><a href="">Контакты</a></li>
-						<li><a href="">Руководство</a></li>
-						<li><a href="">История</a></li>
-					</ul>
-				</div>
-				<div class="ft_catalog">
-					<h4>Каталог товаров</h4>
-					<ul>
-						<li><a href="">Кухни</a></li>
-						<li><a href="">Кровати и кушетки</a></li>
-						<li><a href="">Гарнитуры</a></li>
-						<li><a href="">Тумобчки и прихожие</a></li>
-						<li><a href="">Спальни и матрасы</a></li>
-						<li><a href="">Аксессуары</a></li>
-						<li><a href="">Столы и стулья</a></li>
-						<li><a href="">Каталоги мебели</a></li>
-						<li><a href="">Раскладные диваны</a></li>
-						<li><a href="">Кресла</a></li>
-					</ul>
-					
-				</div>
