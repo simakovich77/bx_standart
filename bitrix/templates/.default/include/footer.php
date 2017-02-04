@@ -1,4 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
+<? \Bitrix\Main\Localization\Loc::loadMessages(__FILE__);?>
+
 <div class="ft_footer">
     <div class="ft_container">
         <div class="ft_about">
