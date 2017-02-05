@@ -1,11 +1,18 @@
 <?
 $aMenuLinks = Array(
 		Array(
-		"Расписание мероприятий",
-		"/partners/raspisanie/",
+		"Условия сотрудничества",
+		"/partners/",
 		Array(), 
 		Array(), 
 		"" 
-	)
+	),
+    Array(
+        "Расписание мероприятий",
+        "/partners/raspisanie/",
+        Array(),
+        Array(),
+        ""
+    )
 );
 ?>
