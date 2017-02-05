@@ -30,11 +30,17 @@
 
 	<div class="wrap">
 		<div id="panel"><?$APPLICATION->ShowPanel();?></div>
-		<div class="hd_header_area">
 
-                <?include_once ($_SERVER['DOCUMENT_ROOT']."/bitrix/templates/.default/include/header.php");?>
 
-		</div>
+
+
+
+            <?include_once ($_SERVER['DOCUMENT_ROOT']."/bitrix/templates/.default/include/header.php");?>
+     
+
+
+
+
 		
 		<!--- // end header area --->
         <?$APPLICATION->IncludeComponent(

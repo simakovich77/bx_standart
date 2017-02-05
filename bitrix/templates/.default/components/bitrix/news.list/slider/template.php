@@ -13,7 +13,6 @@
 $this->setFrameMode(true);
 ?>
 
-<? dump($arResult); ?>
 <script type="text/javascript" >
     $().ready(function(){
         $(function(){
@@ -36,9 +35,9 @@ $this->setFrameMode(true);
                 <? if(is_array($arItem["PREVIEW_PICTURE"])):?>
                 <img src="<?=$arItem["PREVIEW_PICTURE"]?>" alt="" />
                 <?endif;?>
-                <h2><a href=""><?echo $arItem["NAME"]?></a></h2>
+                <h2><a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>"><?echo $arItem["NAME"]?></a></h2>
                 <p><?echo $arItem["PREVIEW_TEXT"]?></p>
-                <a href="" class="sl_more">Подробнее &rarr;</a>
+                <a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>" class="sl_more">Подробнее &rarr;</a>
             </div>
         </div>
 
