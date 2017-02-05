@@ -33,11 +33,11 @@
 
 
 
-
+        <div class="hd_header_area">
 
             <?include_once ($_SERVER['DOCUMENT_ROOT']."/bitrix/templates/.default/include/header.php");?>
-     
 
+        </div>
 
 
 
