@@ -18,7 +18,6 @@ $APPLICATION->SetTitle("");
 		"ROOT_MENU_TYPE" => "left",
 		"USE_EXT" => "N",
 		"COMPONENT_TEMPLATE" => "inner_left"
-	),
-	false
+	)
 );?><br>
  <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

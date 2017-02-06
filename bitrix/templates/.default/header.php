@@ -5,6 +5,27 @@ IncludeTemplateLangFile(__FILE__);
 <head>
 <?$APPLICATION->ShowHead();?>
 <title><?$APPLICATION->ShowTitle()?></title>
+
+
+
+    <!--<link rel="stylesheet" href="/bitrix/templates/.default/template_style.css"/>-->
+    <?
+    use Bitrix\Main\Page\Asset;
+    Asset::getInstance()->addCss("/template_style.css");
+    //Asset::getInstance()->addString("<link href=". SITE_TEMPLATE_PATH . "'/bitrix/templates/.default/template_style.css\' rel='stylesheet' type='text/css'>");
+    ?>
+    <?
+
+
+    Asset::getInstance()->addJs("/bitrix/templates/.default/js/jquery-1.8.2.min.js");
+    Asset::getInstance()->addJs("/bitrix/templates/.default/js/slides.min.jquery.js");
+    Asset::getInstance()->addJs("/bitrix/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js");
+    Asset::getInstance()->addJs("/bitrix/templates/.default/js/functions.js");
+    ?>
+    <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+
+    <? \Bitrix\Main\Localization\Loc::loadMessages(__FILE__);?>
+    <?=GetMessage('MY_LANG_MESSAGE');?>
 </head>
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">

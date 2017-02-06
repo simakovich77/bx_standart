@@ -1,13 +1,10 @@
 ﻿<!-- workarea -->
 </div>
 </div>
-<div class="sb_sidebar">
-    
-    <?
-    require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-    $APPLICATION->SetTitle("");
 
-    ?><?$APPLICATION->IncludeComponent(
+<div class="sb_sidebar">
+
+    <?$APPLICATION->IncludeComponent(
         "bitrix:menu",
         "inner_left",
         array(
@@ -23,10 +20,9 @@
             "ROOT_MENU_TYPE" => "left",
             "USE_EXT" => "N",
             "COMPONENT_TEMPLATE" => "inner_left"
-        ),
-        false
+        )
     );?><br>
-    <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+    <br>
 
 
     <div class="sb_event">
