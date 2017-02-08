@@ -13,6 +13,8 @@
 $this->setFrameMode(true);
 ?>
 
+<? echo "template".date("H.i.s"."<br />"); ?>
+
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />
 <?endif;?>

@@ -20,6 +20,11 @@ use Bitrix\Main\Context,
 
 CPageOption::SetOptionString("main", "nav_page_in_session", "N");
 
+
+echo "component 1".date("H.i.s"."<br />");
+
+
+
 if(!isset($arParams["CACHE_TIME"]))
 	$arParams["CACHE_TIME"] = 36000000;
 
@@ -479,5 +484,19 @@ if(isset($arResult["ID"]))
 		Context::getCurrent()->getResponse()->setLastModified($arResult["ITEMS_TIMESTAMP_X"]);
 	}
 
+
+	echo "component 2".date("H.i.s"."<br />");
+
+
+
 	return $arResult["ELEMENTS"];
+
+
+
 }
+
+
+
+
+
+echo "component 3".date("H.i.s"."<br />");
