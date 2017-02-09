@@ -35,7 +35,8 @@ $this->setFrameMode(true);
 
 
 	<div class="ps_content">
-		<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" align="left" alt="<?=$arItem["NAME"]?>"/>
+
+		<img src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>" align="left" alt="<?=$arItem["NAME"]?>"/>
 		<?echo $arItem["PREVIEW_TEXT"];?>
 		<div style="clear:both"></div>
 	</div>
