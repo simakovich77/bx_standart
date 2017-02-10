@@ -21,7 +21,7 @@ use Bitrix\Main\Context,
 CPageOption::SetOptionString("main", "nav_page_in_session", "N");
 
 
-echo "component 1".date("H.i.s"."<br />");
+//echo "component 1".date("H.i.s"."<br />");
 
 
 
@@ -485,7 +485,7 @@ if(isset($arResult["ID"]))
 	}
 
 
-	echo "component 2".date("H.i.s"."<br />");
+	//echo "component 2".date("H.i.s"."<br />");
 
 
 
@@ -499,4 +499,4 @@ if(isset($arResult["ID"]))
 
 
 
-echo "component 3".date("H.i.s"."<br />");
+//echo "component 3".date("H.i.s"."<br />");

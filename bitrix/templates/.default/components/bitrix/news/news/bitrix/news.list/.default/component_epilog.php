@@ -1,10 +1,5 @@
 <?php?>
-/**
- * Created by PhpStorm.
- * User: sim.i.a
- * Date: 08.02.2017
- * Time: 14:36
- */
+
 
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 /** @var array $arParams */
@@ -21,6 +16,6 @@
 $this->setFrameMode(true);
 ?>
 
-<? echo "epilog".date("H.i.s"."<br />"); ?>
-<?echo "eeeeeeeeeeeeeeeeeeeeeeee";?>
+<? //echo "epilog".date("H.i.s"."<br />"); ?>
+
 <? $APPLICATION->SetTitle("Тестовый заголовок1");?>
