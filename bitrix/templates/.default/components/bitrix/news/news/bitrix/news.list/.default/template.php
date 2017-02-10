@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 <? //echo "template".date("H.i.s"."<br />"); ?>
 
 
-<? $APPLICATION->SetTitle("Тестовый заголовок1");?>
+
 
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />
@@ -39,7 +39,7 @@ $this->setFrameMode(true);
 
 	<div class="ps_content">
 
-		<img src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>" align="left" alt="<?=$arItem["NAME"]?>"/>
+		<img src="<?=$arItem["DETAIL_PICTURE"]["src"]?>" align="left" alt="<?=$arItem["NAME"]?>"/>
 		<?echo $arItem["PREVIEW_TEXT"];?>
 		<div style="clear:both"></div>
 	</div>
