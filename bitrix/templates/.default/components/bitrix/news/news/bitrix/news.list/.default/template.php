@@ -15,6 +15,9 @@ $this->setFrameMode(true);
 
 <? //echo "template".date("H.i.s"."<br />"); ?>
 
+
+<? $APPLICATION->SetTitle("Тестовый заголовок1");?>
+
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />
 <?endif;?>

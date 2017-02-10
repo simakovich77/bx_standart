@@ -1,4 +1,7 @@
-<?php?>
+<?php
+
+$APPLICATION->SetTitle("Тестовый заголовок1");
+?>
 
 
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
@@ -18,4 +21,4 @@ $this->setFrameMode(true);
 
 <? //echo "epilog".date("H.i.s"."<br />"); ?>
 
-<? $APPLICATION->SetTitle("Тестовый заголовок1");?>
+

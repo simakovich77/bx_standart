@@ -4,6 +4,8 @@
 <html lang="en-US">
 <head>
 	<?$APPLICATION->ShowHead();?>
+
+
 	<meta charset="windows-1251">
 	<title></title>
 
@@ -57,5 +59,5 @@
 				<div class="mn_content">
 					<div class="main_post">
 						<div class="main_title">
-							<h1>Заголовок страницы</h1>
+							<h1></h1>
 						</div>
