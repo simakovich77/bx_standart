@@ -19,3 +19,7 @@ $this->setFrameMode(true);
 	<img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" align="left" alt="<?=$arResult["NAME"]?>"/>
 	<?endif;?>
 		<?echo $arResult["DETAIL_TEXT"];?>
+
+<? if($arResult['AUTHOR']):?>
+    Автор: <?=$arResult['AUTHOR']['NAME']?>
+<?endif?>
