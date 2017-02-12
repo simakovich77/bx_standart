@@ -11,6 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+//dump(arResult);
 ?>
 
 
@@ -21,5 +22,5 @@ $this->setFrameMode(true);
 		<?echo $arResult["DETAIL_TEXT"];?>
 
 <? if($arResult['AUTHOR']):?>
-    Автор: <?=$arResult['AUTHOR']['NAME']?>
+    Автор: <?=$arResult['AUTHOR'][0]?>
 <?endif?>
