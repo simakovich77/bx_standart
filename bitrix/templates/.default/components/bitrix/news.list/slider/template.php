@@ -22,6 +22,7 @@ $this->setFrameMode(true);
                 autoHeight: true,
                 play: 4000,
                 effect: 'fade'
+
             });
         });
     });
@@ -38,6 +39,7 @@ $this->setFrameMode(true);
                 <h2><a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>"><?echo $arItem["NAME"]?></a></h2>
                 <p><?echo $arItem["PREVIEW_TEXT"]?></p>
                 <a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>" class="sl_more">Подробнее &rarr;</a>
+                <?dump($arResult)?>
             </div>
         </div>
 
