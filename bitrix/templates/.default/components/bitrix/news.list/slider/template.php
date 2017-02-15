@@ -33,13 +33,14 @@ $this->setFrameMode(true);
         <?foreach($arResult["ITEMS"] as $arItem):?>
         <div>
             <div>
-                <? if(is_array($arItem["PREVIEW_PICTURE"])):?>
-                <img src="<?=$arItem["PREVIEW_PICTURE"]?>" alt="" />
-                <?endif;?>
+                <? //if(is_array($arItem["DETAIL_PICTURE"]["SRC"])):?>
+                <img src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>" alt="" />
+                <?//endif;?>
+                <?//dump($arItem["DETAIL_PICTURE"]["SRC"])?>
                 <h2><a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>"><?echo $arItem["NAME"]?></a></h2>
                 <p><?echo $arItem["PREVIEW_TEXT"]?></p>
                 <a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>" class="sl_more">Подробнее &rarr;</a>
-                <?dump($arResult)?>
+                <?//dump($arResult)?>
             </div>
         </div>
 
