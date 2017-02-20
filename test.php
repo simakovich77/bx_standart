@@ -2,7 +2,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
 
-<<<<<<< HEAD
 ?><?
 
 if(CModule::IncludeModule("iblock")){
@@ -23,14 +22,5 @@ while ($ob = $res->GetNextElement()) {
 =======
 ?>
 
-<?
-$email = COption::GetOptionString("main","email_from");
-echo "admin email - ".$email."</br>";
-
-COption::SetOptionString("main","TEST_PARAMETER", "Y");
-$parameter = COption::GetOptionString("main","TEST_PARAMETER");
-echo "TEST_PARAMETER -".$parameter;
-?>
 	<br>
->>>>>>> 3d804b164028edc869d9110a376682302a9d1d55
  <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
